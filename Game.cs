@@ -204,11 +204,6 @@ namespace Kassbrick
             }
         }
 
-        private void ball_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Game_Load(object sender, EventArgs e)
         {
 
@@ -219,17 +214,17 @@ namespace Kassbrick
 
         }
 
-        private void scoreLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Game_Load_1(object sender, EventArgs e)
         {
 
         }
 
         private void labelS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
         {
 
         }
