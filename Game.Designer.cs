@@ -50,9 +50,19 @@ namespace Kassbrick
             this.labelS.Text = "Score: 0";
             this.labelS.Click += new System.EventHandler(this.labelS_Click);
             // 
+            // player
+            // 
+            this.player.BackColor = System.Drawing.Color.LightSalmon;
+            this.player.Location = new System.Drawing.Point(336, 441);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(133, 39);
+            this.player.TabIndex = 3;
+            this.player.TabStop = false;
+            // 
             // timer1
             // 
             this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timerEvent);
             // 
             // ball
             // 
@@ -62,15 +72,6 @@ namespace Kassbrick
             this.ball.Size = new System.Drawing.Size(33, 33);
             this.ball.TabIndex = 1;
             this.ball.TabStop = false;
-            // 
-            // player
-            // 
-            this.player.BackColor = System.Drawing.Color.LightSalmon;
-            this.player.Location = new System.Drawing.Point(336, 441);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(133, 39);
-            this.player.TabIndex = 3;
-            this.player.TabStop = false;
             // 
             // Game
             // 
@@ -86,7 +87,9 @@ namespace Kassbrick
             this.MinimumSize = new System.Drawing.Size(815, 550);
             this.Name = "Game";
             this.Text = "Kassbrick";
-            this.Load += new System.EventHandler(this.Game_Load_1);
+            this.Load += new System.EventHandler(this.Game_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyUp);
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);
@@ -95,11 +98,9 @@ namespace Kassbrick
         }
 
         #endregion
-
-        private System.Windows.Forms.Label scoreLabel;
-        private System.Windows.Forms.Label labelS;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.PictureBox player;
+        private System.Windows.Forms.Label labelS;
     }
 }

@@ -39,7 +39,7 @@ namespace Kassbrick
 
             player.Left = 347;
 
-            timer.Start();
+            timer1.Start();
 
             foreach (Control x in this.Controls)
             {
@@ -53,7 +53,7 @@ namespace Kassbrick
         private void gameOver(string message)
         {
             isGameOver = true;
-            timer.Stop();
+            timer1.Stop();
             labelS.Text = "Score: " + score + " " + message;
         }
 
@@ -204,17 +204,11 @@ namespace Kassbrick
             }
         }
 
+        private void ball_Click(object sender, EventArgs e)
+        {
+
+        }
         private void Game_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Game_Load_1(object sender, EventArgs e)
         {
 
         }
@@ -224,7 +218,7 @@ namespace Kassbrick
 
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
