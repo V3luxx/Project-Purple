@@ -16,7 +16,7 @@ namespace Kassbrick
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kassbrick());
+            Application.Run(new Game());
         }
     }
 }

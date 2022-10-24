@@ -4,3 +4,8 @@ C:\Users\33695\Desktop\game\game\obj\Debug\Kassbrick.Game.resources
 C:\Users\33695\Desktop\game\game\obj\Debug\Kassbrick.Properties.Resources.resources
 C:\Users\33695\Desktop\game\game\obj\Debug\game.csproj.GenerateResource.cache
 C:\Users\33695\Desktop\game\game\obj\Debug\game.csproj.CoreCompileInputs.cache
+C:\Users\33695\Desktop\Game\game\bin\Debug\Kassbrick.exe.config
+C:\Users\33695\Desktop\Game\game\bin\Debug\Kassbrick.exe
+C:\Users\33695\Desktop\Game\game\bin\Debug\Kassbrick.pdb
+C:\Users\33695\Desktop\Game\game\obj\Debug\Kassbrick.exe
+C:\Users\33695\Desktop\Game\game\obj\Debug\Kassbrick.pdb

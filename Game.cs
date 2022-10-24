@@ -32,7 +32,7 @@ namespace Kassbrick
             ballX = 5;
             ballY = 5;
             playerSpeed = 12;
-            scoreLabel.Text = "Ton Score Est : " + score;
+            labelS.Text = "Ton Score Est : " + score;
 
             ball.Left = 376;
             ball.Top = 328;
@@ -54,7 +54,7 @@ namespace Kassbrick
         {
             isGameOver = true;
             timer.Stop();
-            scoreLabel.Text = "Score: " + score + " " + message;
+            labelS.Text = "Score: " + score + " " + message;
         }
 
         private void initBlocks()
@@ -102,7 +102,7 @@ namespace Kassbrick
 
         private void timerEvent(object sender, EventArgs e)
         {
-            scoreLabel.Text = "Score : " + score;
+            labelS.Text = "Score : " + score;
 
             if (goLeft == true && player.Left > 0)
             {
@@ -213,5 +213,26 @@ namespace Kassbrick
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void scoreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Game_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
