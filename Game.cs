@@ -41,6 +41,7 @@ namespace Kassbrick
 
             timer1.Start();
 
+            // creation des blocks de couleurs differentes.
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "blocks")
@@ -60,7 +61,7 @@ namespace Kassbrick
         private void initBlocks()
         {
             blocks = new PictureBox[15];
-
+            // creation d'un tableau de Pbox afin d'avoir des briques à casser.
             int col = 0;
             int top = 50;
             int left = 100;
@@ -117,6 +118,7 @@ namespace Kassbrick
             ball.Left += ballX;
             ball.Top += ballY;
 
+            // creation de la trajectoire de la balle.
             if (ball.Left < 0 || ball.Left > 775)
             {
                 ballX = -ballX;
@@ -156,7 +158,7 @@ namespace Kassbrick
                     }
                 }
             }
-
+            // cas de victoire et de defaite
             if (score == 15)
             {
                 gameOver("T'as gagné le frère !");
@@ -169,6 +171,7 @@ namespace Kassbrick
         }
 
         private void keyDown(object sender, KeyEventArgs e)
+            // on fait deplacer la picturebox player
         {
             if (e.KeyCode == Keys.Left)
             {
@@ -182,7 +185,7 @@ namespace Kassbrick
 
         private void keyUp(object sender, KeyEventArgs e)
         {
-            // start game when player is ready
+            // la partie demarre quand le joueur est pret ( appui sur une touche )
             if (isInit)
             {
                 initBlocks();
